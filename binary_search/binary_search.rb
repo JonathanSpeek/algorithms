@@ -1,4 +1,4 @@
-# implementation of binary search in Ruby
+# iterative implementation of binary search in Ruby
 
 def binary_search(an_array, item)
     first = 0
@@ -14,7 +14,30 @@ def binary_search(an_array, item)
         elsif an_array[i] < item
             first = i + 1
         else
-            return "#{item} not found in this list"
+            return "#{item} not found in this array"
+        end
+    end
+end
+
+
+# recursive implementation of binary search in Ruby
+
+def binary_search_recursive(an_array, item)
+    first = 0
+    last = an_array.length - 1
+
+    if an_array.length == 0
+        return "#{item} was not found in the array"
+    else
+        i = (first + last) / 2
+        if item == an_array[i]
+            return "#{item} found"
+        else
+            if an_array[i] < item
+                return binary_search_recursive(an_array[i+1, last], item)
+            else
+                return binary_search_recursive(an_array[first, i-1], item)
+            end
         end
     end
 end
