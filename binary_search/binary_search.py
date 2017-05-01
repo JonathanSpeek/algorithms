@@ -2,6 +2,12 @@
 
 
 def binary_search(my_list, item):
+    """Performs binary search to find the position of an integer in a given, sorted, list.
+
+    my_list -- sorted list of integers
+    item -- integer you are searching for the position of
+    """
+
     first = 0
     last = len(my_list) - 1
 
