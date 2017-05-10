@@ -11,9 +11,8 @@ def insertion_sort(a_list):
     [2, 5, 6, 34, 78, 100, 100, 789, 10000]
     """
 
-    size = len(a_list)
     i = 0
-    while i < size:
+    while i < len(a_list):
         current = a_list[i]
         j = i
         while j > 0 and a_list[j - 1] > current:
