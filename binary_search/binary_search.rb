@@ -36,7 +36,7 @@ def binary_search_recursive(an_array, item)
             if an_array[i] < item
                 return binary_search_recursive(an_array[i+1, last], item)
             else
-                return binary_search_recursive(an_array[first, i-1], item)
+                return binary_search_recursive(an_array[first, i], item)
             end
         end
     end
