@@ -7,7 +7,7 @@ def recursive_gcd(a,b):
 	if a % b == 0:
 		return b
 	else:
-	    return gcd(b, a % b)
+	    return recursive_gcd(b, a % b)
 
 def iter_gcd(a, b):
     '''
