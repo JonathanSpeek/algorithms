@@ -1,7 +1,6 @@
 const arr = [1,2,3,4,5,6,7,8,9];
 
 // iterative implementation of binary search in JavaScript
-
 const binarySearch = (arr, item) => {
   let right = arr.length;
   let left = 0;
@@ -23,7 +22,6 @@ console.log(binarySearch(arr, 9));
 
 
 // recursive implementation of binary search in JavaScript
-
 const binarySearchRecursive = (arr, item) => {
   const n = arr.length;
   const mid = Math.floor((n - 1) / 2);
